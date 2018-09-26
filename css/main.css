@@ -1,0 +1,39 @@
+body{
+    font-style: italic;
+    background:#333;
+    color: #f2f2f2;
+    margin: 1%;
+}
+.head{
+    background-color: darkgray;
+    color: black;
+    padding: wrap-text;
+    text-align: center;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1em;
+}
+.center{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.footer{
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+@media(max-width: 720px){
+    .grid1{
+        display: block;
+        grid-template-columns: 100%;
+    }
+}
